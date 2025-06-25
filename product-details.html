@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products RedStore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="nav-bar">
+            <div class="logo">
+                <img src="./images/logo.png" style="width: 125px;">
+            </div>
+            <nav>
+                <ul id="Menuitems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Products.html">Product</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="Account.html">Acount</a></li>
+                </ul>
+            </nav>
+            <a href="Cart-items.html"><img src="./images/cart1.png" width="25px" height="25px"></a>
+            <img src="./images/menu.png" class="menu" onclick="menubtn()">
+        </div>
+    </div>
+
+    <!-- ----single-product-details--- -->
+
+    <div class="small-container single-product">
+
+        <div class="row">
+            <div class="col-2">
+                <img src="./images/gallery-1.jpg " id="product-img">
+
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="./images/gallery-1.jpg" width="100%" class="small-Img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="./images/gallery-2.jpg" width="100%" class="small-Img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="./images/gallery-3.jpg" width="100%" class="small-Img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="./images/gallery-4.jpg" width="100%" class="small-Img">
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-2">
+                <p>Home /T-Shirt</p>
+                <h1>Red Printed T-Shirt by HRX</h1>
+                <h4>$49.90</h4>
+                <select>
+                    <option>Select Size</option>
+                    <option>XXL</option>
+                    <option>XL</option>
+                    <option>Large</option>
+                    <option>Medium</option>
+                    <option>Small</option>
+                </select>
+                <input type="number" value="1">
+                <a href="" class="btn">Add To Cart</a>
+                <h3>Product Details</h3>
+                <br>
+                <P>Success is'nt always about greatness. it's about consisntency. <br>consistent hard work gains
+                    success.
+                    Greatness will come. <br>we are providing best offers</P>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----TITLE--- -->
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>Related Products</h2>
+            <p>View More</p>
+        </div>
+    </div>
+    <!-- ---PRODUCTS-- -->
+    <div class="small-container">
+
+        <div class="row">
+
+            <div class="col-4">
+                <img src="./images/product-9.jpg">
+                <h4>Puma T-Shirt</h4>
+                <div class="rating"><img src="./images/rating.png"></div>
+                <p>$99.90</p>
+            </div>
+            <div class="col-4">
+                <img src="./images/product-10.jpg">
+                <h4>Puma T-Shirt</h4>
+                <div class="rating"><img src="./images/rating.png"></div>
+                <p>$89.90</p>
+            </div>
+            <div class="col-4">
+                <img src="./images/product-11.jpg">
+                <h4>Puma T-Shirt</h4>
+                <div class="rating"><img src="./images/rating.png"></div>
+                <p>$69.90</p>
+            </div>
+            <div class="col-4">
+                <img src="./images/product-12.jpg">
+                <h4>Puma T-Shirt</h4>
+                <div class="rating"><img src="./images/rating.png"></div>
+                <p>$69.90</p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- -----FOOTER--- -->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="./images/play-store.png">
+                        <img src="./images/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="./images/logo-white.png">
+                    <p>Our Purpose Is To Sustainable Make the Pleasure and Benefits of sports Accessible to the Many.
+                    </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Usefull Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright & Developed By <span>JALEEL</span></p>
+        </div>
+    </div>
+
+    <script>
+        const menuitems = document.querySelector("#Menuitems");
+        menuitems.style.maxHeight = "0px";
+
+        function menubtn() {
+            if (menuitems.style.maxHeight == "0px") {
+                menuitems.style.maxHeight = "200px";
+            } else {
+                menuitems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+    <!-- -----for product image gellery--- -->
+    <script>
+        var productImg = document.getElementById("product-img");
+
+        let smallImg = document.getElementsByClassName("small-Img");
+
+        smallImg[0].onclick = function () {
+            productImg.src = smallImg[0].src;
+        }
+        smallImg[1].onclick = function () {
+            productImg.src = smallImg[1].src;
+        }
+        smallImg[2].onclick = function () {
+            productImg.src = smallImg[2].src;
+        }
+        smallImg[3].onclick = function () {
+            productImg.src = smallImg[3].src;
+        }
+
+    </script>
+</body>
+
+</html>
